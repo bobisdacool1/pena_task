@@ -8,8 +8,8 @@ use Delivery\Weight;
 
 class DHL implements IDeliveryService
 {
-	public function getPrice(Weight $weight): float
+	public function getDeliveryCost(Weight $weight): float
 	{
-		return $weight->getWeightInKG() * 10;
+		return (float) $weight->getWeightInKG() * 100;
 	}
 }

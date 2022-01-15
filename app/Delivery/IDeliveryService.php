@@ -8,5 +8,5 @@ use Delivery\Weight;
 
 interface IDeliveryService
 {
-	public function getPrice(Weight $weight): float;
+	public function getDeliveryCost(Weight $weight): float;
 }
