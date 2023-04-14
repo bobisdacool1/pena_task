@@ -1,15 +1,12 @@
 <?php
 
-use Delivery\Services\IDeliveryService;
-use Delivery\Services\RussianPost;
-use Delivery\Weight;
-use Location\Route;
+namespace Bobisdacool1\PenaTask\Delivery;
+
+use Bobisdacool1\PenaTask\Delivery\Services\RussianPost;
 
 class Delivery
 {
-	private Route $deliveryRoute;
 	private Weight $parcelWeight;
-
 	private IDeliveryService $deliveryService;
 
 	public function __construct()
@@ -17,6 +14,11 @@ class Delivery
 		$this->deliveryService = new RussianPost();
 		$this->parcelWeight = new Weight();
 	}
+
+    public function getConst(): int
+    {
+        return $this->deliveryService->getDeliveryCost($this->getWeight());
+    }
 
 	public function setDeliveryService(IDeliveryService $deliveryService): void
 	{

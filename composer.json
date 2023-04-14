@@ -1,0 +1,16 @@
+{
+    "name": "bobisdacool1/pena_task",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Bobisdacool1\\PenaTask\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aleksey Sinitsyn",
+            "email": "sinitsin.aleksey2003@yandex.ru"
+        }
+    ],
+    "require": {}
+}

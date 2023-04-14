@@ -1,8 +1,6 @@
 <?php
 
-
-namespace Delivery;
-
+namespace Bobisdacool1\PenaTask\Delivery;
 
 class Weight
 {

@@ -1,10 +1,6 @@
 <?php
 
-
-namespace Delivery\Services;
-
-
-use Delivery\Weight;
+namespace Bobisdacool1\PenaTask\Delivery;
 
 interface IDeliveryService
 {
